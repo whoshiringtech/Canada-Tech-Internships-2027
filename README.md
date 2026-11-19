@@ -2,7 +2,7 @@
 
 Every open software, data, cloud, security, QA and IT internship and entry-level job in Canada that we can find, pulled straight from company career pages. Updated every 6 hours.
 
-**98 internships and co-ops** and **53 new grad and entry-level jobs** as of November 19, 2026.
+**99 internships and co-ops** and **53 new grad and entry-level jobs** as of November 19, 2026.
 
 - Search all of them, plus US and remote jobs, at **[whoshiringtech.com](https://whoshiringtech.com)**
 - Get new matches by email every Monday, free: **[job alerts](https://whoshiringtech.com/alerts/)**
@@ -20,6 +20,7 @@ Star this repo to keep it handy. 🚧 **Closed** means the employer took the job
 | Company | Role | Location | Posted | Apply |
 |---|---|---|---|---|
 | [Workstream](https://whoshiringtech.com/company/workstream/) | Full Stack Engineer Intern | Vancouver | Today | [Apply](https://job-boards.greenhouse.io/workstream/jobs/6265872004) |
+| [Georgian Partners Growth](https://whoshiringtech.com/company/georgian-partners-growth/) | Physical AI & Robotics Intern \(2027\) | Toronto \(remote OK\) | Today | [Apply](https://jobs.ashbyhq.com/georgian/62da47ff-0424-4e28-bffa-cff0de8ca228) |
 | [Roblox](https://whoshiringtech.com/company/roblox/) | \[Summer 2027 Canada\] Software Engineer Intern, Engine | Vancouver | 1d | [Apply](https://careers.roblox.com/jobs/8386080?gh_jid=8386080) |
 | [Steel](https://whoshiringtech.com/company/steel/) | Software Engineer Intern \(Summer 2027\) | Toronto | 4d | [Apply](https://jobs.ashbyhq.com/steel/5fbdbebf-ddb2-4264-a941-3ab6d475208c) |
 | [Huawei](https://whoshiringtech.com/company/huawei/) | Intern Researcher - Embodied AI | Edmonton | 7d | [Apply](https://huaweicanada.recruitee.com/o/intern-researcher-embodied-ai-3) |

@@ -1,6 +1,6 @@
 # Canadian Tech Internships, Co-ops and New Grad Jobs (2026-2027)
 
-Every open software, data, cloud, security, QA and IT internship and entry-level job in Canada that we can find, pulled straight from company career pages. Updated every morning.
+Every open software, data, cloud, security, QA and IT internship and entry-level job in Canada that we can find, pulled straight from company career pages. Updated every 6 hours.
 
 **100 internships and co-ops** and **55 new grad and entry-level jobs** as of November 18, 2026.
 

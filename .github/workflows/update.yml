@@ -1,7 +1,7 @@
 name: Update list
 on:
   schedule:
-    - cron: "0 11 * * *" # 11:00 UTC, after whoshiringtech.com refreshes
+    - cron: "30 3,9,15,21 * * *" # 30 min after each whoshiringtech.com refresh
   workflow_dispatch:
 permissions:
   contents: write

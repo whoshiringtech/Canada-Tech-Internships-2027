@@ -2,13 +2,13 @@
 
 Every open software, data, cloud, security, QA and IT internship and entry-level job in Canada that we can find, pulled straight from company career pages. Updated every 6 hours.
 
-**100 internships and co-ops** and **55 new grad and entry-level jobs** as of November 18, 2026.
+**98 internships and co-ops** and **55 new grad and entry-level jobs** as of November 19, 2026.
 
 - Search all of them, plus US and remote jobs, at **[whoshiringtech.com](https://whoshiringtech.com)**
 - Get new matches by email every Monday, free: **[job alerts](https://whoshiringtech.com/alerts/)**
 - Click a company name to see all of its tech jobs. "Apply" goes straight to the employer.
 
-Star this repo to keep it handy. Jobs older than 90 days are removed.
+Star this repo to keep it handy. 🚧 **Closed** means the employer took the job down; closed jobs stay listed for 14 days so you know not to apply. Jobs older than 90 days are removed.
 
 ## Contents
 
@@ -29,8 +29,6 @@ Star this repo to keep it handy. Jobs older than 90 days are removed.
 | [SSI](https://whoshiringtech.com/company/ssi/) | Software Developer Co-op | Victoria (remote OK) | 10d | [Apply](https://ssicorporate.bamboohr.com/careers/101) |
 | [Brave](https://whoshiringtech.com/company/brave/) | Software Engineering Intern - Waterloo University - Winter Session | Canada | 13d | [Apply](https://job-boards.greenhouse.io/brave/jobs/8360001) |
 | [NorthStar Earth & Space](https://whoshiringtech.com/company/northstar-earth-and-space/) | Stagiaire en recherche – IA et observation de la Terre / Research Intern – AI for Earth Observation (Ei²) | Montreal | 15d | [Apply](https://northstarearthandspace.bamboohr.com/careers/117) |
-| [DataVisor](https://whoshiringtech.com/company/datavisor/) | Software Engineer Internship - Winter 2027 | Vancouver (remote OK) | 15d | [Apply](https://apply.workable.com/j/2FB6A93BF6) |
-| [DataVisor](https://whoshiringtech.com/company/datavisor/) | Software Engineer Internship - Winter 2027 | Calgary (remote OK) | 15d | [Apply](https://apply.workable.com/j/2FB6A93BF6) |
 | [DataVisor](https://whoshiringtech.com/company/datavisor/) | Software Engineer Internship - Winter 2027 | Toronto (remote OK) | 15d | [Apply](https://apply.workable.com/j/2FB6A93BF6) |
 | [Global Relay](https://whoshiringtech.com/company/global-relay/) | Co-op Java Developer - Winter 2027 | Halifax | 16d | [Apply](https://www.globalrelay.com/careers/jobs?gh_jid=6241594004) |
 | [Global Relay](https://whoshiringtech.com/company/global-relay/) | Co-op DevOps - Winter 2027 | Halifax | 16d | [Apply](https://www.globalrelay.com/careers/jobs?gh_jid=6241597004) |

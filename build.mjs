@@ -6,6 +6,7 @@ const SITE = "https://whoshiringtech.com";
 const res = await fetch(`${SITE}/data/jobs.json`, { headers: { "User-Agent": "canada-tech-internships list builder" } });
 if (!res.ok) throw new Error(`jobs.json ${res.status}`);
 const { jobs } = await res.json();
+if (!Array.isArray(jobs)) throw new Error("jobs.json has no job list");
 
 // Memory of jobs shown before (state.json), so a job that disappears can be shown as Closed.
 // A job counts as closed after it is missing from 2 refreshes in a row (one failed company
@@ -15,6 +16,13 @@ const state = JSON.parse(await fs.readFile(STATE, "utf8").catch(() => "{}"));
 const now = Date.now();
 const live = new Map();
 for (const j of jobs) if (j[3] === "CA" && (j[6] === "internship" || j[6] === "entry")) live.set(j[8], j);
+// Safety check: if the site suddenly returns far fewer jobs (a broken refresh), don't mark
+// everything closed. Leave the list as it is until the next run.
+const wasOpen = Object.values(state).filter((st) => !st.closedAt).length;
+if (wasOpen >= 40 && live.size < wasOpen * 0.4) {
+  console.log(`Only ${live.size} jobs now vs ${wasOpen} before; looks like a bad refresh, not updating.`);
+  process.exit(0);
+}
 for (const [url, j] of live) state[url] = { job: j, missing: 0, closedAt: null };
 for (const [url, st] of Object.entries(state)) {
   if (live.has(url)) continue;
@@ -28,7 +36,25 @@ await fs.writeFile(STATE, JSON.stringify(state));
 
 // Row: [title, company, companySlug, country, city, remote, level, field, url, day]
 const today = Math.floor(Date.now() / 864e5);
-const cell = (s) => String(s ?? "").replace(/\|/g, "/").replace(/[\r\n]+/g, " ").trim();
+// Job titles and company names come from outside sites, so treat them as plain text:
+// escape every character that Markdown or HTML could turn into a link, image or tag.
+const cell = (s) =>
+  String(s ?? "")
+    .replace(/[\r\n\t]+/g, " ")
+    .replace(/\b(https?:\/\/|www\.)\S*/gi, "") // no web addresses (GitHub would make them clickable)
+    .slice(0, 200)
+    .replace(/[\\`*_{}[\]()<>#!|~]/g, (c) => "\\" + c)
+    .trim();
+// Only plain https links to the employer; anything else gets no Apply link.
+const safeUrl = (u) => {
+  try {
+    const x = new URL(u);
+    return x.protocol === "https:" ? x.href.replace(/[()<>]/g, (c) => encodeURIComponent(c)) : null;
+  } catch {
+    return null;
+  }
+};
+const safeSlug = (s) => String(s).toLowerCase().replace(/[^a-z0-9-]/g, "");
 const age = (d) => (today - d <= 0 ? "Today" : `${today - d}d`);
 const where = (city, remote) => (city === "Remote" ? "Remote (Canada)" : `${city}${remote ? " (remote OK)" : ""}`);
 
@@ -38,9 +64,10 @@ function table(level) {
   const closed = all.filter((st) => st.closedAt).sort((a, b) => b.closedAt - a.closedAt);
   const row = (st) => {
     const [title, company, slug, , city, remote, , , url, day] = st.job;
-    const apply = st.closedAt ? "🚧 Closed" : `[Apply](${url})`;
+    const link = safeUrl(url);
+    const apply = st.closedAt ? "🚧 Closed" : link ? `[Apply](${link})` : "";
     const name = st.closedAt ? `~~${cell(title)}~~` : cell(title);
-    return `| [${cell(company)}](${SITE}/company/${slug}/) | ${name} | ${cell(where(city, remote))} | ${age(day)} | ${apply} |`;
+    return `| [${cell(company)}](${SITE}/company/${safeSlug(slug)}/) | ${name} | ${cell(where(city, remote))} | ${age(day)} | ${apply} |`;
   };
   const rows = [...open, ...closed].map(row);
   return {

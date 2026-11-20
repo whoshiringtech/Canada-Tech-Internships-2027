@@ -2,7 +2,7 @@
 
 Every open software, data, cloud, security, QA and IT internship and entry-level job in Canada that we can find, pulled straight from company career pages. Updated every 6 hours.
 
-**94 internships and co-ops** and **53 new grad and entry-level jobs** as of November 19, 2026.
+**95 internships and co-ops** and **51 new grad and entry-level jobs** as of November 20, 2026.
 
 - Search all of them, plus US and remote jobs, at **[whoshiringtech.com](https://whoshiringtech.com)**
 - Get new matches by email every Monday, free: **[job alerts](https://whoshiringtech.com/alerts/)**
@@ -106,6 +106,7 @@ Star this repo to keep it handy. 🚧 **Closed** means the employer took the job
 | [Lyft](https://whoshiringtech.com/company/lyft/) | Software Engineer Intern, Backend \(Summer 2027 - Toronto\) | Toronto | 70d | [Apply](https://app.careerpuck.com/job-board/lyft/job/8767710002?gh_jid=8767710002) |
 | [General Dynamics Mission Systems -](https://whoshiringtech.com/company/general-dynamics-mission-systems/) | Co-op Winter 2027 – Systems Engineering – 4-8-Months | Canada | 70d | [Apply](https://jobs.smartrecruiters.com/gdmsi/744000149046839) |
 | [General Dynamics Mission Systems -](https://whoshiringtech.com/company/general-dynamics-mission-systems/) | Co-op Winter 2027 – Systems Engineering – 4-8-Months | Ottawa | 70d | [Apply](https://jobs.smartrecruiters.com/gdmsi/744000149042859) |
+| [Astera Labs Early Career - North America 2027](https://whoshiringtech.com/company/astera-labs-early-career-north-america-2027/) | Platform Applications Engineer Intern/Co-op \(Tools & Validation Infrastructure\) | Vancouver | 71d | [Apply](https://job-boards.greenhouse.io/asteraearlycareer2027/jobs/4732319005) |
 | [Rivian and Volkswagen Group Technologies](https://whoshiringtech.com/company/rivian-and-volkswagen-group-technologies/) | Software Engineering Intern - Applications, Infotainment & Mobile \(January - August 2027\) | Toronto \(remote OK\) | 77d | [Apply](https://jobs.ashbyhq.com/rivianvw.tech/bc8e38eb-b68c-4234-a06a-99875df7d600) |
 | [Huawei](https://whoshiringtech.com/company/huawei/) | Intern Researcher – Multimodal AI & Interaction | Markham | 77d | [Apply](https://huaweicanada.recruitee.com/o/intern-researcher-multimodal-ai-interaction) |
 | [General Dynamics Mission Systems -](https://whoshiringtech.com/company/general-dynamics-mission-systems/) | Co-op Winter 2027 - Software Engineering - 8 Months | Ottawa | 77d | [Apply](https://jobs.smartrecruiters.com/gdmsi/744000147561809) |
@@ -118,7 +119,6 @@ Star this repo to keep it handy. 🚧 **Closed** means the employer took the job
 
 | Company | Role | Location | Posted | Apply |
 |---|---|---|---|---|
-| [Bertelsmann](https://whoshiringtech.com/company/bertelsmann/) | IT Onsite Support Technician | Canada | 2d | [Apply](https://jobs.smartrecruiters.com/bertelsmann-jobs/744000162405519) |
 | [Global Relay](https://whoshiringtech.com/company/global-relay/) | Support Specialist, Technical Support - L1 | Vancouver | 3d | [Apply](https://www.globalrelay.com/careers/jobs?gh_jid=6264641004) |
 | [Sony Pictures Imageworks](https://whoshiringtech.com/company/sony-pictures-imageworks/) | Infrastructure - Développeur\(euse\) de logiciel/ Infrastructure - Associate Software Developer | Montreal | 3d | [Apply](https://job-boards.greenhouse.io/sonypicturesimageworks/jobs/8207497003) |
 | [Sony Pictures Imageworks](https://whoshiringtech.com/company/sony-pictures-imageworks/) | Associate Software Engineer | Vancouver | 3d | [Apply](https://job-boards.greenhouse.io/sonypicturesimageworks/jobs/8207482003) |
@@ -146,7 +146,6 @@ Star this repo to keep it handy. 🚧 **Closed** means the employer took the job
 | [Xsolla](https://whoshiringtech.com/company/xsolla/) | Junior Frontend Developer, Custom Webshop Development | Montreal | 23d | [Apply](https://jobs.lever.co/xsolla/a71646ad-6ac5-4103-b68c-3d399fc10b35) |
 | [Konrad](https://whoshiringtech.com/company/konrad/) | Associate Data Analyst | Toronto | 28d | [Apply](https://www.konrad.com/careers/job/8043218003?gh_jid=8043218003) |
 | [Workleap](https://whoshiringtech.com/company/workleap/) | IT Support Technician \(6-month Contract\) | Remote \(Canada\) | 28d | [Apply](https://job-boards.greenhouse.io/workleap/jobs/5269683007) |
-| [Kraun Electric](https://whoshiringtech.com/company/kraun-electric/) | Junior Software Developer | Canada | 29d | [Apply](https://kraunelectric.bamboohr.com/careers/98) |
 | [Arc'teryx Equipment](https://whoshiringtech.com/company/arc-teryx-equipment/) | Design Developer 1 | Vancouver | 30d | [Apply](https://jobs.lever.co/arcteryx.com/e19c8228-c1c7-46a4-becb-75ad9f5aa680) |
 | [Quora](https://whoshiringtech.com/company/quora/) | Full Stack Software Engineer, New Grad - Quora \(Remote\) | Remote \(Canada\) | 31d | [Apply](https://jobs.ashbyhq.com/quora/5494e6a1-a973-46af-b9f3-57208eb91b52) |
 | [Ivalua](https://whoshiringtech.com/company/ivalua/) | Représentant Support Helpdesk | Montreal | 35d | [Apply](https://boards.greenhouse.io/ivalua/jobs/8280076?gh_jid=8280076) |
@@ -171,6 +170,8 @@ Star this repo to keep it handy. 🚧 **Closed** means the employer took the job
 | [PointClickCare](https://whoshiringtech.com/company/pointclickcare/) | Canada- Jr Software Engineer \(SRE\) | Mississauga \(remote OK\) | 80d | [Apply](https://jobs.lever.co/pointclickcare/e56d6df3-16fb-4652-9d97-c6140700d2e0) |
 | [Stripe](https://whoshiringtech.com/company/stripe/) | Software Engineer, New Grad | Toronto | 81d | [Apply](https://stripe.com/jobs/search?gh_jid=8157838) |
 | [Konrad](https://whoshiringtech.com/company/konrad/) | Mobile Developer \(Entry Level\) | Toronto | 87d | [Apply](https://www.konrad.com/careers/job/7976082003?gh_jid=7976082003) |
+| [Bertelsmann](https://whoshiringtech.com/company/bertelsmann/) | ~~IT Onsite Support Technician~~ | Canada | 2d | 🚧 Closed |
+| [Kraun Electric](https://whoshiringtech.com/company/kraun-electric/) | ~~Junior Software Developer~~ | Canada | 29d | 🚧 Closed |
 | [University Health Network](https://whoshiringtech.com/company/university-health-network/) | ~~Digital Technician \(IT Service Desk Agent\)~~ | Toronto | 16d | 🚧 Closed |
 | [General Dynamics UK](https://whoshiringtech.com/company/general-dynamics-uk/) | ~~Junior Systems Engineer - Networking~~ | Ottawa | 31d | 🚧 Closed |
 

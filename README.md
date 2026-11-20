@@ -2,7 +2,7 @@
 
 Every open software, data, cloud, security, QA and IT internship and entry-level job in Canada that we can find, pulled straight from company career pages. Updated every 6 hours.
 
-**95 internships and co-ops** and **51 new grad and entry-level jobs** as of November 20, 2026.
+**96 internships and co-ops** and **52 new grad and entry-level jobs** as of November 20, 2026.
 
 - Search all of them, plus US and remote jobs, at **[whoshiringtech.com](https://whoshiringtech.com)**
 - Get new matches by email every Monday, free: **[job alerts](https://whoshiringtech.com/alerts/)**
@@ -19,6 +19,7 @@ Star this repo to keep it handy. 🚧 **Closed** means the employer took the job
 
 | Company | Role | Location | Posted | Apply |
 |---|---|---|---|---|
+| [AON3D Careers](https://whoshiringtech.com/company/aon3d-careers/) | Software Developer Intern | Montreal | Today | [Apply](https://job-boards.greenhouse.io/aon3d/jobs/4504702009) |
 | [Workstream](https://whoshiringtech.com/company/workstream/) | Full Stack Engineer Intern | Vancouver | 1d | [Apply](https://job-boards.greenhouse.io/workstream/jobs/6265872004) |
 | [Georgian Partners Growth](https://whoshiringtech.com/company/georgian-partners-growth/) | Physical AI & Robotics Intern \(2027\) | Toronto \(remote OK\) | 1d | [Apply](https://jobs.ashbyhq.com/georgian/62da47ff-0424-4e28-bffa-cff0de8ca228) |
 | [EUNA Solutions](https://whoshiringtech.com/company/euna-solutions/) | Associate AI-Enablement Developer - 8 mth Coop | Oakville | 1d | [Apply](https://euna.bamboohr.com/careers/822) |
@@ -119,6 +120,7 @@ Star this repo to keep it handy. 🚧 **Closed** means the employer took the job
 
 | Company | Role | Location | Posted | Apply |
 |---|---|---|---|---|
+| [Tecsys Inc.](https://whoshiringtech.com/company/tecsys-inc/) | Technical Support Analyst | Montreal | Today | [Apply](https://apply.workable.com/j/57FFB75199) |
 | [Global Relay](https://whoshiringtech.com/company/global-relay/) | Support Specialist, Technical Support - L1 | Vancouver | 3d | [Apply](https://www.globalrelay.com/careers/jobs?gh_jid=6264641004) |
 | [Sony Pictures Imageworks](https://whoshiringtech.com/company/sony-pictures-imageworks/) | Infrastructure - Développeur\(euse\) de logiciel/ Infrastructure - Associate Software Developer | Montreal | 3d | [Apply](https://job-boards.greenhouse.io/sonypicturesimageworks/jobs/8207497003) |
 | [Sony Pictures Imageworks](https://whoshiringtech.com/company/sony-pictures-imageworks/) | Associate Software Engineer | Vancouver | 3d | [Apply](https://job-boards.greenhouse.io/sonypicturesimageworks/jobs/8207482003) |

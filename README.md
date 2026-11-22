@@ -2,7 +2,7 @@
 
 Every open software, data, cloud, security, QA and IT internship and entry-level job in Canada that we can find, pulled straight from company career pages. Updated every 6 hours.
 
-**93 internships and co-ops** and **52 new grad and entry-level jobs** as of November 22, 2026.
+**93 internships and co-ops** and **53 new grad and entry-level jobs** as of November 22, 2026.
 
 - Search all of them, plus US and remote jobs, at **[whoshiringtech.com](https://whoshiringtech.com)**
 - Get new matches by email every Monday, free: **[job alerts](https://whoshiringtech.com/alerts/)**
@@ -120,6 +120,7 @@ Star this repo to keep it handy. 🚧 **Closed** means the employer took the job
 
 | Company | Role | Location | Posted | Apply |
 |---|---|---|---|---|
+| [Questrade](https://whoshiringtech.com/company/questrade/) | Junior Cybersecurity Specialist, Incident Response \(Contract\) | Toronto | Today | [Apply](https://job-boards.greenhouse.io/questrade/jobs/4504815009) |
 | [Affirm](https://whoshiringtech.com/company/affirm/) | Software Engineer I, Backend \(Streaming Infra\) | Remote \(Canada\) | 1d | [Apply](https://job-boards.greenhouse.io/affirm/jobs/8201471003) |
 | [Tecsys Inc.](https://whoshiringtech.com/company/tecsys-inc/) | Technical Support Analyst | Montreal | 2d | [Apply](https://apply.workable.com/j/57FFB75199) |
 | [Affirm](https://whoshiringtech.com/company/affirm/) | Software Engineer I, Fullstack \(Disputes Platform\) | Remote \(Canada\) | 2d | [Apply](https://job-boards.greenhouse.io/affirm/jobs/8196691003) |

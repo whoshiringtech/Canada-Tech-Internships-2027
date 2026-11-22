@@ -2,7 +2,7 @@
 
 Every open software, data, cloud, security, QA and IT internship and entry-level job in Canada that we can find, pulled straight from company career pages. Updated every 6 hours.
 
-**93 internships and co-ops** and **52 new grad and entry-level jobs** as of November 21, 2026.
+**93 internships and co-ops** and **52 new grad and entry-level jobs** as of November 22, 2026.
 
 - Search all of them, plus US and remote jobs, at **[whoshiringtech.com](https://whoshiringtech.com)**
 - Get new matches by email every Monday, free: **[job alerts](https://whoshiringtech.com/alerts/)**

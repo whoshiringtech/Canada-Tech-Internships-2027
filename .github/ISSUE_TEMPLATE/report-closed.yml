@@ -1,0 +1,17 @@
+name: Report a closed job
+description: A job on the list is closed or the link doesn't work.
+title: "Closed: "
+labels: ["closed job"]
+body:
+  - type: input
+    id: link
+    attributes:
+      label: Apply link of the job
+      description: Right-click the job's Apply button, copy the link, and paste it here.
+      placeholder: https://
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: Anything else? (optional)

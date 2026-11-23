@@ -3,25 +3,44 @@ on:
   schedule:
     - cron: "30 3,9,15,21 * * *" # 30 min after each whoshiringtech.com refresh
   workflow_dispatch:
+  # Brandon adds "approved" (or "remove") to an Add a job / Report a closed job issue.
+  issues:
+    types: [labeled]
 permissions:
   contents: write
   issues: write
+# One run at a time, and queued runs are never cancelled. Each run handles every approved issue
+# it finds, so approvals made close together are still picked up.
+concurrency:
+  group: update-list
+  cancel-in-progress: false
 jobs:
   update:
+    if: github.event_name != 'issues' || github.event.label.name == 'approved' || github.event.label.name == 'remove'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          ref: main
       - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4
         with:
           node-version: 22
+      - name: Read approved submissions
+        run: node submissions.mjs apply
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
       - id: build
         run: node build.mjs
       - name: Commit if changed
         run: |
           git config user.name "whoshiring-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add README.md state.json
+          git add README.md state.json meta.json
           git diff --cached --quiet || (git commit -m "Update jobs $(date -u +%F)" && git push)
+      - name: Reply on the issues
+        run: node submissions.mjs reply
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
       - name: Heads-up when 2028 jobs appear (opens one issue, once)
         if: steps.build.outputs.count2028 != '0' && steps.build.outputs.count2028 != ''
         env:

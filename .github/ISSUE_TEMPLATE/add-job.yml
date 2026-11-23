@@ -1,0 +1,58 @@
+name: Add a job
+description: Know a Canadian tech internship, co-op or new grad job that's missing? Send it in.
+title: "Add job: "
+labels: ["add job"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks! We check every submission before it goes on the list.
+        Only jobs in Canada (or remote in Canada), on the employer's own careers site or job board (Workday, Greenhouse, Lever, iCIMS and so on). No recruiters, no LinkedIn or Indeed links.
+  - type: input
+    id: company
+    attributes:
+      label: Company
+      placeholder: e.g. TD Bank
+    validations:
+      required: true
+  - type: input
+    id: title
+    attributes:
+      label: Job title
+      placeholder: e.g. Software Developer Co-op (Summer 2027)
+    validations:
+      required: true
+  - type: dropdown
+    id: level
+    attributes:
+      label: Level
+      options:
+        - Internship or co-op
+        - New grad or entry level
+    validations:
+      required: true
+  - type: input
+    id: city
+    attributes:
+      label: City
+      placeholder: e.g. Toronto
+    validations:
+      required: true
+  - type: dropdown
+    id: remote
+    attributes:
+      label: Remote?
+      options:
+        - "No, in person or hybrid"
+        - "Remote OK"
+        - "Fully remote (Canada)"
+    validations:
+      required: true
+  - type: input
+    id: link
+    attributes:
+      label: Apply link
+      description: The link to the job on the employer's own site (must start with https://).
+      placeholder: https://
+    validations:
+      required: true

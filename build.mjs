@@ -5,7 +5,7 @@ import fs from "node:fs/promises";
 const SITE = "https://whoshiringtech.com";
 const res = await fetch(`${SITE}/data/jobs.json`, { headers: { "User-Agent": "canada-tech-internships list builder" } });
 if (!res.ok) throw new Error(`jobs.json ${res.status}`);
-const { jobs } = await res.json();
+const { jobs, built } = await res.json();
 if (!Array.isArray(jobs)) throw new Error("jobs.json has no job list");
 
 // Heads-up for next year's list: Canadian internship / new grad jobs that mention 2028.
@@ -29,11 +29,16 @@ const live = new Map();
 for (const j of jobs) if (j[3] === "CA" && (j[6] === "internship" || j[6] === "entry")) live.set(j[8], j);
 // Safety check: if the site suddenly returns far fewer jobs (a broken refresh), don't mark
 // everything closed. Leave the list as it is until the next run.
-const wasOpen = Object.values(state).filter((st) => !st.closedAt).length;
+const wasOpen = Object.values(state).filter((st) => !st.closedAt && !st.submitted).length;
 if (wasOpen >= 40 && live.size < wasOpen * 0.4) {
   console.log(`Only ${live.size} jobs now vs ${wasOpen} before; looks like a bad refresh, not updating.`);
   process.exit(0);
 }
+// The site's feed refreshes twice a day but this list builds more often (and on approvals), so a
+// job only counts as missing once per new feed. meta.json remembers which feed was counted last.
+const META = "meta.json";
+const meta = JSON.parse(await fs.readFile(META, "utf8").catch(() => "{}"));
+const newFeed = !built || built !== meta.feedBuilt;
 for (const [url, j] of live) state[url] = { job: j, missing: 0, closedAt: null };
 for (const [url, st] of Object.entries(state)) {
   if (live.has(url)) continue;
@@ -41,10 +46,13 @@ for (const [url, st] of Object.entries(state)) {
   // The site stops listing jobs older than 90 days. We can't tell if those closed,
   // so they're marked "Archived" instead of "Closed" and stay on the list.
   if (Math.floor(now / 864e5) - st.job[9] > 90) { st.closedAt = now; st.archived = true; continue; }
+  // Jobs readers submitted aren't in the feed; they close only when someone reports them.
+  if (st.submitted || !newFeed) continue;
   st.missing++;
   if (st.missing >= 2) st.closedAt = now;
 }
 await fs.writeFile(STATE, JSON.stringify(state));
+await fs.writeFile(META, JSON.stringify({ feedBuilt: built || null }));
 
 // Row: [title, company, companySlug, country, city, remote, level, field, url, day]
 const today = Math.floor(Date.now() / 864e5);
@@ -80,7 +88,9 @@ function table(level) {
     const link = safeUrl(url);
     const apply = st.archived ? "📦 Archived" : st.closedAt ? "🚧 Closed" : link ? `[Apply](${link})` : "";
     const name = cell(title);
-    return `| [${cell(company)}](${SITE}/company/${safeSlug(slug)}/) | ${name} | ${cell(where(city, remote))} | ${age(day)} | ${apply} |`;
+    // Submitted jobs have no company page on the site, so their company is plain text.
+    const co = slug ? `[${cell(company)}](${SITE}/company/${safeSlug(slug)}/)` : cell(company);
+    return `| ${co} | ${name} | ${cell(where(city, remote))} | ${age(day)} | ${apply} |`;
   };
   const rows = sorted.map(row);
   return {
@@ -95,13 +105,14 @@ const date = new Date().toLocaleDateString("en-CA", { year: "numeric", month: "l
 
 const md = `# Canadian Tech Internships, Co-ops and New Grad Jobs (2026-2027)
 
-Every open software, data, cloud, security, QA and IT internship and entry-level job in Canada that we can find, pulled straight from company career pages. Updated every 6 hours.
+Every open software, data, cloud, security, QA and IT internship and entry-level job in Canada that we can find, pulled straight from company career pages, plus jobs readers send in (we check each one). Updated every 6 hours.
 
 **${intern.n} internships and co-ops** and **${entry.n} new grad and entry-level jobs** as of ${date}.
 
 - Search all of them, plus US and remote jobs, at **[whoshiringtech.com](${SITE})**
 - Get new matches by email every Monday, free: **[job alerts](${SITE}/alerts/)**
 - Click a company name to see all of its tech jobs. "Apply" goes straight to the employer.
+- Know a job that's missing? **[Add a job](../../issues/new?template=add-job.yml)**. Found a closed one? **[Report it](../../issues/new?template=report-closed.yml)**.
 
 Star this repo to keep it handy. 🚧 **Closed** means the employer took the job down; 📦 **Archived** means the job was posted more than 90 days ago and may be closed. Nothing is ever removed, so this list is a full record of every job that appeared.
 
@@ -120,7 +131,7 @@ ${entry.md}
 
 ---
 
-Built by [Who's Hiring](${SITE}). Jobs are collected from each company's own public job board (Greenhouse, Lever, Ashby and others). Spotted a mistake or a closed job? [Open an issue](../../issues).
+Built by [Who's Hiring](${SITE}). Jobs are collected from each company's own public job board (Greenhouse, Lever, Ashby and others). Spotted a mistake? [Open an issue](../../issues).
 `;
 await fs.writeFile("README.md", md);
 console.log(`README: ${intern.n} internships, ${entry.n} entry level`);

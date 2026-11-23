@@ -60,16 +60,17 @@ const where = (city, remote) => (city === "Remote" ? "Remote (Canada)" : `${city
 
 function table(level) {
   const all = Object.values(state).filter((st) => st.job[6] === level);
-  const open = all.filter((st) => !st.closedAt).sort((a, b) => b.job[9] - a.job[9]);
-  const closed = all.filter((st) => st.closedAt).sort((a, b) => b.closedAt - a.closedAt);
+  // Closed jobs keep their spot in date order (newest first); only the Apply cell changes.
+  const open = all.filter((st) => !st.closedAt);
+  const sorted = [...all].sort((a, b) => b.job[9] - a.job[9]);
   const row = (st) => {
     const [title, company, slug, , city, remote, , , url, day] = st.job;
     const link = safeUrl(url);
     const apply = st.closedAt ? "🚧 Closed" : link ? `[Apply](${link})` : "";
-    const name = st.closedAt ? `~~${cell(title)}~~` : cell(title);
+    const name = cell(title);
     return `| [${cell(company)}](${SITE}/company/${safeSlug(slug)}/) | ${name} | ${cell(where(city, remote))} | ${age(day)} | ${apply} |`;
   };
-  const rows = [...open, ...closed].map(row);
+  const rows = sorted.map(row);
   return {
     n: open.length,
     md: ["| Company | Role | Location | Posted | Apply |", "|---|---|---|---|---|", ...rows].join("\n"),

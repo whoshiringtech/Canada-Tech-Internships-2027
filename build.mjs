@@ -8,6 +8,16 @@ if (!res.ok) throw new Error(`jobs.json ${res.status}`);
 const { jobs } = await res.json();
 if (!Array.isArray(jobs)) throw new Error("jobs.json has no job list");
 
+// Heads-up for next year's list: Canadian internship / new grad jobs that mention 2028.
+// The workflow opens one GitHub issue the first time any show up (time to start the 2028 repo).
+const next = jobs.filter((j) => j[3] === "CA" && (j[6] === "internship" || j[6] === "entry") && /\b2028\b/.test(j[0]));
+if (process.env.GITHUB_OUTPUT) {
+  // Titles come from outside sites: strip line breaks so they can't break the output format.
+  const list = next.slice(0, 20).map((j) => `- ${j[1]}: ${j[0]}`.replace(/[\r\n]+/g, " ")).join("\n");
+  await fs.appendFile(process.env.GITHUB_OUTPUT, `count2028=${next.length}\nlist2028<<EOF_2028\n${list}\nEOF_2028\n`);
+}
+console.log(`Jobs mentioning 2028: ${next.length}`);
+
 // Memory of jobs shown before (state.json), so a job that disappears can be shown as Closed.
 // A job counts as closed after it is missing from 2 refreshes in a row (one failed company
 // board shouldn't mark its jobs closed). Nothing is ever removed: this repo is the record of

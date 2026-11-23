@@ -66,8 +66,6 @@ const safeUrl = (u) => {
     return null;
   }
 };
-// Day we saw the job disappear, e.g. "Nov 20, 2026" (Toronto time).
-const closedOn = (ms) => new Date(ms).toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric", timeZone: "America/Toronto" });
 const safeSlug = (s) => String(s).toLowerCase().replace(/[^a-z0-9-]/g, "");
 const age = (d) => (today - d <= 0 ? "Today" : `${today - d}d`);
 const where = (city, remote) => (city === "Remote" ? "Remote (Canada)" : `${city}${remote ? " (remote OK)" : ""}`);
@@ -80,7 +78,7 @@ function table(level) {
   const row = (st) => {
     const [title, company, slug, , city, remote, , , url, day] = st.job;
     const link = safeUrl(url);
-    const apply = st.archived ? "📦 Archived" : st.closedAt ? `🚧 Closed ${closedOn(st.closedAt)}` : link ? `[Apply](${link})` : "";
+    const apply = st.archived ? "📦 Archived" : st.closedAt ? "🚧 Closed" : link ? `[Apply](${link})` : "";
     const name = cell(title);
     return `| [${cell(company)}](${SITE}/company/${safeSlug(slug)}/) | ${name} | ${cell(where(city, remote))} | ${age(day)} | ${apply} |`;
   };
@@ -105,7 +103,7 @@ Every open software, data, cloud, security, QA and IT internship and entry-level
 - Get new matches by email every Monday, free: **[job alerts](${SITE}/alerts/)**
 - Click a company name to see all of its tech jobs. "Apply" goes straight to the employer.
 
-Star this repo to keep it handy. 🚧 **Closed** means the employer took the job down (the date is when it came down); 📦 **Archived** means the job was posted more than 90 days ago and may be closed. Nothing is ever removed, so this list is a full record of every job that appeared.
+Star this repo to keep it handy. 🚧 **Closed** means the employer took the job down; 📦 **Archived** means the job was posted more than 90 days ago and may be closed. Nothing is ever removed, so this list is a full record of every job that appeared.
 
 ## Contents
 

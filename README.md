@@ -2,7 +2,7 @@
 
 Every open software, data, cloud, security, QA and IT internship and entry-level job in Canada that we can find, pulled straight from company career pages. Updated every 6 hours.
 
-**93 internships and co-ops** and **53 new grad and entry-level jobs** as of November 22, 2026.
+**92 internships and co-ops** and **52 new grad and entry-level jobs** as of November 23, 2026.
 
 - Search all of them, plus US and remote jobs, at **[whoshiringtech.com](https://whoshiringtech.com)**
 - Get new matches by email every Monday, free: **[job alerts](https://whoshiringtech.com/alerts/)**
@@ -19,7 +19,6 @@ Star this repo to keep it handy. 🚧 **Closed** means the employer took the job
 
 | Company | Role | Location | Posted | Apply |
 |---|---|---|---|---|
-| [Workstream](https://whoshiringtech.com/company/workstream/) | Full Stack Engineer Intern | Vancouver | 4d | [Apply](https://job-boards.greenhouse.io/workstream/jobs/6265872004) |
 | [Georgian Partners Growth](https://whoshiringtech.com/company/georgian-partners-growth/) | Physical AI & Robotics Intern \(2027\) | Toronto \(remote OK\) | 4d | [Apply](https://jobs.ashbyhq.com/georgian/62da47ff-0424-4e28-bffa-cff0de8ca228) |
 | [EUNA Solutions](https://whoshiringtech.com/company/euna-solutions/) | Associate AI-Enablement Developer - 8 mth Coop | Oakville | 4d | [Apply](https://euna.bamboohr.com/careers/822) |
 | [Roblox](https://whoshiringtech.com/company/roblox/) | \[Summer 2027 Canada\] Software Engineer Intern, Engine | Vancouver | 5d | [Apply](https://careers.roblox.com/jobs/8386080?gh_jid=8386080) |
@@ -112,6 +111,7 @@ Star this repo to keep it handy. 🚧 **Closed** means the employer took the job
 | [Huawei](https://whoshiringtech.com/company/huawei/) | Co-op Engineer - Computer Network for AI | Markham | 82d | [Apply](https://huaweicanada.recruitee.com/o/co-op-engineer-computer-network-for-ai) |
 | [Stripe](https://whoshiringtech.com/company/stripe/) | Software Engineer, Intern \(Summer\) | Toronto | 84d | [Apply](https://stripe.com/jobs/search?gh_jid=8130805) |
 | [Huawei](https://whoshiringtech.com/company/huawei/) | Co-op Researcher – Agentic AI | Markham | 88d | [Apply](https://huaweicanada.recruitee.com/o/co-op-researcher-agentic-ai) |
+| [Workstream](https://whoshiringtech.com/company/workstream/) | ~~Full Stack Engineer Intern~~ | Vancouver | 4d | 🚧 Closed |
 | [Angel Host](https://whoshiringtech.com/company/angel-host/) | ~~AI Product Engineer Internship - Co-op / Work Placement~~ | Montreal | 14d | 🚧 Closed |
 | [Moment Energy](https://whoshiringtech.com/company/moment-energy/) | ~~Software Engineering Co-op~~ | Surrey | 48d | 🚧 Closed |
 | [AON3D Careers](https://whoshiringtech.com/company/aon3d-careers/) | ~~Software Developer Intern~~ | Montreal | 3d | 🚧 Closed |
@@ -128,7 +128,6 @@ Star this repo to keep it handy. 🚧 **Closed** means the employer took the job
 | [Sony Pictures Imageworks](https://whoshiringtech.com/company/sony-pictures-imageworks/) | Infrastructure - Développeur\(euse\) de logiciel/ Infrastructure - Associate Software Developer | Montreal | 6d | [Apply](https://job-boards.greenhouse.io/sonypicturesimageworks/jobs/8207497003) |
 | [Sony Pictures Imageworks](https://whoshiringtech.com/company/sony-pictures-imageworks/) | Associate Software Engineer | Vancouver | 6d | [Apply](https://job-boards.greenhouse.io/sonypicturesimageworks/jobs/8207482003) |
 | [Elk Valley Resources](https://whoshiringtech.com/company/elk-valley-resources/) | Technician, Desktop Support | Canada | 6d | [Apply](https://jobs.lever.co/evr/73ce4cbf-bc2d-4bf3-a2d2-d5395f4f1cc9) |
-| [Amii](https://whoshiringtech.com/company/amii/) | Junior System Administrator | Edmonton | 6d | [Apply](https://amii.bamboohr.com/careers/253) |
 | [AlayaCare](https://whoshiringtech.com/company/alayacare/) | Junior Fullstack Developer \(Python\) | Montreal | 7d | [Apply](https://alayacare.com/open-positions?gh_jid=8936280002) |
 | [DataVisor](https://whoshiringtech.com/company/datavisor/) | Infrastructure Engineer, Junior / New Grad \(Toronto\) | Toronto \(remote OK\) | 10d | [Apply](https://apply.workable.com/j/14ABD92A86) |
 | [Affirm](https://whoshiringtech.com/company/affirm/) | Software Engineer I, Backend \(Continuous Delivery\) | Remote \(Canada\) | 11d | [Apply](https://job-boards.greenhouse.io/affirm/jobs/8181185003) |
@@ -173,6 +172,7 @@ Star this repo to keep it handy. 🚧 **Closed** means the employer took the job
 | [PointClickCare](https://whoshiringtech.com/company/pointclickcare/) | Canada- Jr Software Engineer \(SRE\) | Mississauga \(remote OK\) | 83d | [Apply](https://jobs.lever.co/pointclickcare/e56d6df3-16fb-4652-9d97-c6140700d2e0) |
 | [Stripe](https://whoshiringtech.com/company/stripe/) | Software Engineer, New Grad | Toronto | 84d | [Apply](https://stripe.com/jobs/search?gh_jid=8157838) |
 | [Konrad](https://whoshiringtech.com/company/konrad/) | Mobile Developer \(Entry Level\) | Toronto | 90d | [Apply](https://www.konrad.com/careers/job/7976082003?gh_jid=7976082003) |
+| [Amii](https://whoshiringtech.com/company/amii/) | ~~Junior System Administrator~~ | Edmonton | 6d | 🚧 Closed |
 | [Thoughtworks](https://whoshiringtech.com/company/thoughtworks/) | ~~Associate \(Graduate\) Developer~~ | Toronto | 25d | 🚧 Closed |
 | [Intelerad](https://whoshiringtech.com/company/intelerad/) | ~~Junior Software Developer \(Java/Linux/PostgresSQL\)~~ | Montreal | 18d | 🚧 Closed |
 | [Bertelsmann](https://whoshiringtech.com/company/bertelsmann/) | ~~IT Onsite Support Technician~~ | Canada | 5d | 🚧 Closed |

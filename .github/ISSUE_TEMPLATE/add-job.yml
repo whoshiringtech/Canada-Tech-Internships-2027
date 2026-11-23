@@ -31,6 +31,22 @@ body:
         - New grad or entry level
     validations:
       required: true
+  - type: dropdown
+    id: category
+    attributes:
+      label: Category
+      options:
+        - Software Engineering
+        - Data Science, AI & Machine Learning
+        - Cloud & DevOps
+        - Security
+        - QA & Testing
+        - IT & Support
+        - Product & Program
+        - Hardware & Embedded
+        - Other Tech
+    validations:
+      required: true
   - type: input
     id: city
     attributes:

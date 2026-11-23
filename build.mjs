@@ -75,32 +75,65 @@ const safeUrl = (u) => {
   }
 };
 const safeSlug = (s) => String(s).toLowerCase().replace(/[^a-z0-9-]/g, "");
-const age = (d) => (today - d <= 0 ? "Today" : `${today - d}d`);
+// How long ago a job was posted: "Today", "12d", then months ("3mo"), then years ("1yr 2mo").
+const age = (d) => {
+  const n = today - d;
+  if (n <= 0) return "Today";
+  if (n < 30) return `${n}d`;
+  if (n < 365) return `${Math.floor(n / 30)}mo`;
+  const y = Math.floor(n / 365);
+  const m = Math.floor((n - y * 365) / 30);
+  return m ? `${y}yr ${m}mo` : `${y}yr`;
+};
 const where = (city, remote) => (city === "Remote" ? "Remote (Canada)" : `${city}${remote ? " (remote OK)" : ""}`);
 
-function table(level) {
-  const all = Object.values(state).filter((st) => st.job[6] === level);
-  // Closed jobs keep their spot in date order (newest first); only the Apply cell changes.
-  const open = all.filter((st) => !st.closedAt);
-  const sorted = [...all].sort((a, b) => b.job[9] - a.job[9]);
-  const row = (st) => {
-    const [title, company, slug, , city, remote, , , url, day] = st.job;
-    const link = safeUrl(url);
-    const apply = st.archived ? "📦 Archived" : st.closedAt ? "🚧 Closed" : link ? `[Apply](${link})` : "";
-    const name = cell(title);
-    // Submitted jobs have no company page on the site, so their company is plain text.
-    const co = slug ? `[${cell(company)}](${SITE}/company/${safeSlug(slug)}/)` : cell(company);
-    return `| ${co} | ${name} | ${cell(where(city, remote))} | ${age(day)} | ${apply} |`;
-  };
-  const rows = sorted.map(row);
-  return {
-    n: open.length,
-    md: ["| Company | Role | Location | Posted | Apply |", "|---|---|---|---|---|", ...rows].join("\n"),
-  };
+// Job categories, same as whoshiringtech.com's fields. Jobs with no field go under Other.
+const CATEGORIES = [
+  ["software", "💻", "Software Engineering"],
+  ["data-ai", "🤖", "Data Science, AI & Machine Learning"],
+  ["cloud-devops", "☁️", "Cloud & DevOps"],
+  ["security", "🔐", "Security"],
+  ["qa", "🧪", "QA & Testing"],
+  ["it-support", "🛠️", "IT & Support"],
+  ["product", "📱", "Product & Program"],
+  ["hardware", "🔧", "Hardware & Embedded"],
+  ["other", "🧩", "Other Tech"],
+];
+const fieldOf = (st) => (CATEGORIES.some(([k]) => k === st.job[7]) ? st.job[7] : "other");
+
+function row(st) {
+  const [title, company, slug, , city, remote, , , url, day] = st.job;
+  const link = safeUrl(url);
+  const apply = st.archived ? "📦 Archived" : st.closedAt ? "🚧 Closed" : link ? `[Apply](${link})` : "";
+  // Submitted jobs have no company page on the site, so their company is plain text.
+  const co = slug ? `[${cell(company)}](${SITE}/company/${safeSlug(slug)}/)` : cell(company);
+  return `| ${co} | ${cell(title)} | ${cell(where(city, remote))} | ${age(day)} | ${apply} |`;
 }
 
-const intern = table("internship");
-const entry = table("entry");
+// One section per level, split into a table per category (biggest first, Other last).
+// Each table has a fixed anchor (<a name>) so the Browse links keep working as counts change.
+function section(level, prefix) {
+  const all = Object.values(state).filter((st) => st.job[6] === level);
+  const open = all.filter((st) => !st.closedAt).length;
+  const groups = CATEGORIES.map(([key, icon, label]) => {
+    const jobs = all.filter((st) => fieldOf(st) === key);
+    return { key, icon, label, jobs, open: jobs.filter((st) => !st.closedAt).length, anchor: `${prefix}-${key}` };
+  })
+    .filter((g) => g.jobs.length)
+    .sort((a, b) => (a.key === "other") - (b.key === "other") || b.open - a.open);
+  const browse = groups.map((g) => `- ${g.icon} [${g.label}](#${g.anchor}) (${g.open})`).join("\n");
+  const tables = groups
+    .map((g) => {
+      // Closed jobs keep their spot in date order (newest first); only the Apply cell changes.
+      const rows = [...g.jobs].sort((a, b) => b.job[9] - a.job[9]).map(row);
+      return [`<a name="${g.anchor}"></a>`, `### ${g.icon} ${g.label} (${g.open})`, "", "| Company | Role | Location | Posted | Apply |", "|---|---|---|---|---|", ...rows].join("\n");
+    })
+    .join("\n\n");
+  return { n: open, browse, tables };
+}
+
+const intern = section("internship", "intern");
+const entry = section("entry", "newgrad");
 const date = new Date().toLocaleDateString("en-CA", { year: "numeric", month: "long", day: "numeric", timeZone: "America/Toronto" });
 
 const md = `# Canadian Tech Internships, Co-ops and New Grad Jobs (2026-2027)
@@ -116,18 +149,21 @@ Every open software, data, cloud, security, QA and IT internship and entry-level
 
 Star this repo to keep it handy. 🚧 **Closed** means the employer took the job down; 📦 **Archived** means the job was posted more than 90 days ago and may be closed. Nothing is ever removed, so this list is a full record of every job that appeared.
 
-## Contents
+## Browse ${intern.n} internships and co-ops by category
 
-- [Internships and co-ops](#internships-and-co-ops)
-- [New grad and entry level](#new-grad-and-entry-level)
+${intern.browse}
+
+## Browse ${entry.n} new grad and entry-level jobs by category
+
+${entry.browse}
 
 ## Internships and co-ops
 
-${intern.md}
+${intern.tables}
 
 ## New grad and entry level
 
-${entry.md}
+${entry.tables}
 
 ---
 

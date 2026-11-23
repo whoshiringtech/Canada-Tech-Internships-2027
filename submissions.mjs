@@ -63,6 +63,7 @@ export function httpsUrl(s) {
 }
 
 const LEVELS = { "internship or co-op": "internship", "new grad or entry level": "entry" };
+const CATEGORY = { "software engineering": "software", "data science, ai & machine learning": "data-ai", "cloud & devops": "cloud-devops", security: "security", "qa & testing": "qa", "it & support": "it-support", "product & program": "product", "hardware & embedded": "hardware", "other tech": "other" };
 const REMOTE = { "no, in person or hybrid": 0, "remote ok": 1, "fully remote (canada)": 2 };
 
 // Returns { job } or { error }. Row format matches build.mjs:
@@ -79,9 +80,10 @@ export function jobFromForm(f, day) {
   if (remoteKind === undefined) return { error: "the Remote? answer isn't one of the form's choices" };
   if (!city && remoteKind !== 2) return { error: "the city is missing" };
   if (!url) return { error: "the apply link isn't a valid https:// link" };
+  const field = CATEGORY[clean(f["category"], 60).toLowerCase()] || "other";
   if (/linkedin\.com|indeed\.(com|ca)/i.test(new URL(url).host)) return { error: "LinkedIn and Indeed links aren't accepted; please use the employer's own site" };
   if (remoteKind === 2) city = "Remote";
-  return { job: [title, company, "", "CA", city, remoteKind === 1 ? 1 : 0, level, "", url, day] };
+  return { job: [title, company, "", "CA", city, remoteKind === 1 ? 1 : 0, level, field, url, day] };
 }
 
 async function approvedBy(issue, label) {

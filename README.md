@@ -1,12 +1,13 @@
 # Canadian Tech Internships, Co-ops and New Grad Jobs (2026-2027)
 
-Every open software, data, cloud, security, QA and IT internship and entry-level job in Canada that we can find, pulled straight from company career pages. Updated every 6 hours.
+Every open software, data, cloud, security, QA and IT internship and entry-level job in Canada that we can find, pulled straight from company career pages, plus jobs readers send in (we check each one). Updated every 6 hours.
 
-**92 internships and co-ops** and **52 new grad and entry-level jobs** as of November 23, 2026.
+**91 internships and co-ops** and **51 new grad and entry-level jobs** as of November 23, 2026.
 
 - Search all of them, plus US and remote jobs, at **[whoshiringtech.com](https://whoshiringtech.com)**
 - Get new matches by email every Monday, free: **[job alerts](https://whoshiringtech.com/alerts/)**
 - Click a company name to see all of its tech jobs. "Apply" goes straight to the employer.
+- Know a job that's missing? **[Add a job](../../issues/new?template=add-job.yml)**. Found a closed one? **[Report it](../../issues/new?template=report-closed.yml)**.
 
 Star this repo to keep it handy. 🚧 **Closed** means the employer took the job down; 📦 **Archived** means the job was posted more than 90 days ago and may be closed. Nothing is ever removed, so this list is a full record of every job that appeared.
 
@@ -43,7 +44,7 @@ Star this repo to keep it handy. 🚧 **Closed** means the employer took the job
 | [Stripe](https://whoshiringtech.com/company/stripe/) | PhD Machine Learning Engineer, Intern | Toronto | 24d | [Apply](https://stripe.com/jobs/search?gh_jid=8328664) |
 | [Stripe](https://whoshiringtech.com/company/stripe/) | Master's Machine Learning Engineer, Intern | Toronto | 24d | [Apply](https://stripe.com/jobs/search?gh_jid=8333122) |
 | [Huawei](https://whoshiringtech.com/company/huawei/) | Intern Researcher- AI Agents | Montreal | 25d | [Apply](https://huaweicanada.recruitee.com/o/intern-researcher-ai-agents-1) |
-| [Fours](https://whoshiringtech.com/company/fours/) | QA Engineering Intern \(Contract\) | Vancouver | 26d | [Apply](https://jobs.lever.co/fours/886b0283-be32-472c-8978-fc3d9b23d43b) |
+| [Fours](https://whoshiringtech.com/company/fours/) | QA Engineering Intern \(Contract\) | Vancouver | 26d | 🚧 Closed |
 | [Xradar](https://whoshiringtech.com/company/xradar/) | Software Engineer Co-op | Burnaby | 26d | [Apply](https://xradar.bamboohr.com/careers/203) |
 | [OpusClip](https://whoshiringtech.com/company/opusclip/) | Customer Experience Test Automation Intern | Burnaby | 27d | [Apply](https://jobs.ashbyhq.com/opusclip/6906926b-eb37-4b68-ad17-5383fbda7818) |
 | [Nasdaq](https://whoshiringtech.com/company/nasdaq/) | Co-op 2026 - Back End Software Developer Intern | Toronto | 27d | [Apply](https://job-boards.greenhouse.io/nasdaq/jobs/4453620009) |
@@ -178,8 +179,8 @@ Star this repo to keep it handy. 🚧 **Closed** means the employer took the job
 | [mthree Recruiting Portal](https://whoshiringtech.com/company/mthree-recruiting-portal/) | Junior Java Developer | Halifax | 81d | [Apply](https://job-boards.greenhouse.io/mthreerecruitingportal/jobs/4710618006) |
 | [PointClickCare](https://whoshiringtech.com/company/pointclickcare/) | Canada- Jr Software Engineer \(SRE\) | Mississauga \(remote OK\) | 83d | [Apply](https://jobs.lever.co/pointclickcare/e56d6df3-16fb-4652-9d97-c6140700d2e0) |
 | [Stripe](https://whoshiringtech.com/company/stripe/) | Software Engineer, New Grad | Toronto | 84d | [Apply](https://stripe.com/jobs/search?gh_jid=8157838) |
-| [Konrad](https://whoshiringtech.com/company/konrad/) | Mobile Developer \(Entry Level\) | Toronto | 90d | [Apply](https://www.konrad.com/careers/job/7976082003?gh_jid=7976082003) |
+| [Konrad](https://whoshiringtech.com/company/konrad/) | Mobile Developer \(Entry Level\) | Toronto | 90d | 🚧 Closed |
 
 ---
 
-Built by [Who's Hiring](https://whoshiringtech.com). Jobs are collected from each company's own public job board (Greenhouse, Lever, Ashby and others). Spotted a mistake or a closed job? [Open an issue](../../issues).
+Built by [Who's Hiring](https://whoshiringtech.com). Jobs are collected from each company's own public job board (Greenhouse, Lever, Ashby and others). Spotted a mistake? [Open an issue](../../issues).

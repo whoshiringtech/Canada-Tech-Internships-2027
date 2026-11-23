@@ -10,7 +10,8 @@ if (!Array.isArray(jobs)) throw new Error("jobs.json has no job list");
 
 // Memory of jobs shown before (state.json), so a job that disappears can be shown as Closed.
 // A job counts as closed after it is missing from 2 refreshes in a row (one failed company
-// board shouldn't mark its jobs closed). Closed jobs stay listed for 14 days, then drop off.
+// board shouldn't mark its jobs closed). Nothing is ever removed: this repo is the record of
+// every job that appeared this cycle (a new repo starts for the next year).
 const STATE = "state.json";
 const state = JSON.parse(await fs.readFile(STATE, "utf8").catch(() => "{}"));
 const now = Date.now();
@@ -26,11 +27,12 @@ if (wasOpen >= 40 && live.size < wasOpen * 0.4) {
 for (const [url, j] of live) state[url] = { job: j, missing: 0, closedAt: null };
 for (const [url, st] of Object.entries(state)) {
   if (live.has(url)) continue;
-  // Jobs that aged out (older than 90 days) aren't "closed", they just leave the list.
-  if (Math.floor(now / 864e5) - st.job[9] > 90) { delete state[url]; continue; }
+  if (st.closedAt) continue;
+  // The site stops listing jobs older than 90 days. We can't tell if those closed,
+  // so they're marked "Archived" instead of "Closed" and stay on the list.
+  if (Math.floor(now / 864e5) - st.job[9] > 90) { st.closedAt = now; st.archived = true; continue; }
   st.missing++;
-  if (st.missing >= 2 && !st.closedAt) st.closedAt = now;
-  if (st.closedAt && now - st.closedAt > 14 * 864e5) delete state[url];
+  if (st.missing >= 2) st.closedAt = now;
 }
 await fs.writeFile(STATE, JSON.stringify(state));
 
@@ -66,7 +68,7 @@ function table(level) {
   const row = (st) => {
     const [title, company, slug, , city, remote, , , url, day] = st.job;
     const link = safeUrl(url);
-    const apply = st.closedAt ? "🚧 Closed" : link ? `[Apply](${link})` : "";
+    const apply = st.archived ? "📦 Archived" : st.closedAt ? "🚧 Closed" : link ? `[Apply](${link})` : "";
     const name = cell(title);
     return `| [${cell(company)}](${SITE}/company/${safeSlug(slug)}/) | ${name} | ${cell(where(city, remote))} | ${age(day)} | ${apply} |`;
   };
@@ -91,7 +93,7 @@ Every open software, data, cloud, security, QA and IT internship and entry-level
 - Get new matches by email every Monday, free: **[job alerts](${SITE}/alerts/)**
 - Click a company name to see all of its tech jobs. "Apply" goes straight to the employer.
 
-Star this repo to keep it handy. 🚧 **Closed** means the employer took the job down; closed jobs stay listed for 14 days so you know not to apply. Jobs older than 90 days are removed.
+Star this repo to keep it handy. 🚧 **Closed** means the employer took the job down; 📦 **Archived** means the job was posted more than 90 days ago and may be closed. Nothing is ever removed, so this list is a full record of every job that appeared.
 
 ## Contents
 

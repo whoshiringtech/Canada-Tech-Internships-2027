@@ -2,7 +2,7 @@
 
 Every open software, data, cloud, security, QA and IT internship and entry-level job in Canada that we can find, pulled straight from company career pages, plus jobs readers send in (we check each one). Updated every 6 hours.
 
-**91 internships and co-ops** and **51 new grad and entry-level jobs** as of November 23, 2026.
+**93 internships and co-ops** and **51 new grad and entry-level jobs** as of November 24, 2026.
 
 - Search all of them, plus US and remote jobs, at **[whoshiringtech.com](https://whoshiringtech.com)**
 - Get new matches by email every Monday, free: **[job alerts](https://whoshiringtech.com/alerts/)**
@@ -11,9 +11,9 @@ Every open software, data, cloud, security, QA and IT internship and entry-level
 
 Star this repo to keep it handy. 🚧 **Closed** means the employer took the job down; 📦 **Archived** means the job was posted more than 90 days ago and may be closed. Nothing is ever removed, so this list is a full record of every job that appeared.
 
-## Browse 91 internships and co-ops by category
+## Browse 93 internships and co-ops by category
 
-- 💻 [Software Engineering](#intern-software) (39)
+- 💻 [Software Engineering](#intern-software) (41)
 - 🤖 [Data Science, AI & Machine Learning](#intern-data-ai) (30)
 - 🔧 [Hardware & Embedded](#intern-hardware) (6)
 - 🧪 [QA & Testing](#intern-qa) (5)
@@ -36,12 +36,13 @@ Star this repo to keep it handy. 🚧 **Closed** means the employer took the job
 ## Internships and co-ops
 
 <a name="intern-software"></a>
-### 💻 Software Engineering (39)
+### 💻 Software Engineering (41)
 
 | Company | Role | Location | Posted | Apply |
 |---|---|---|---|---|
+| [Brave](https://whoshiringtech.com/company/brave/) | Software Development Intern - Waterloo University - Web3 Core | Canada | 1d | [Apply](https://job-boards.greenhouse.io/brave/jobs/8412532) |
 | [AON3D Careers](https://whoshiringtech.com/company/aon3d-careers/) | Software Developer Intern | Montreal | 4d | 🚧 Closed |
-| [Workstream](https://whoshiringtech.com/company/workstream/) | Full Stack Engineer Intern | Vancouver | 5d | 🚧 Closed |
+| [Workstream](https://whoshiringtech.com/company/workstream/) | Full Stack Engineer Intern | Vancouver | 5d | [Apply](https://job-boards.greenhouse.io/workstream/jobs/6265872004) |
 | [Roblox](https://whoshiringtech.com/company/roblox/) | \[Summer 2027 Canada\] Software Engineer Intern, Engine | Vancouver | 6d | [Apply](https://careers.roblox.com/jobs/8386080?gh_jid=8386080) |
 | [Steel](https://whoshiringtech.com/company/steel/) | Software Engineer Intern \(Summer 2027\) | Toronto | 9d | [Apply](https://jobs.ashbyhq.com/steel/5fbdbebf-ddb2-4264-a941-3ab6d475208c) |
 | [Acumatica](https://whoshiringtech.com/company/acumatica/) | Intern Developer/ Stagiaire développeur | Montreal | 12d | [Apply](https://jobs.smartrecruiters.com/acumatica/744000161353959) |

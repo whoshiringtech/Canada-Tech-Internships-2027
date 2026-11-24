@@ -2,7 +2,7 @@
 
 Every open software, data, cloud, security, QA and IT internship and entry-level job in Canada that we can find, pulled straight from company career pages, plus jobs readers send in (we check each one). Updated every 6 hours.
 
-**93 internships and co-ops** and **51 new grad and entry-level jobs** as of November 24, 2026.
+**89 internships and co-ops** and **51 new grad and entry-level jobs** as of November 24, 2026.
 
 - Search all of them, plus US and remote jobs, at **[whoshiringtech.com](https://whoshiringtech.com)**
 - Get new matches by email every Monday, free: **[job alerts](https://whoshiringtech.com/alerts/)**
@@ -11,14 +11,14 @@ Every open software, data, cloud, security, QA and IT internship and entry-level
 
 Star this repo to keep it handy. 🚧 **Closed** means the employer took the job down; 📦 **Archived** means the job was posted more than 90 days ago and may be closed. Nothing is ever removed, so this list is a full record of every job that appeared.
 
-## Browse 93 internships and co-ops by category
+## Browse 89 internships and co-ops by category
 
-- 💻 [Software Engineering](#intern-software) (41)
+- 💻 [Software Engineering](#intern-software) (40)
 - 🤖 [Data Science, AI & Machine Learning](#intern-data-ai) (30)
 - 🔧 [Hardware & Embedded](#intern-hardware) (6)
-- 🧪 [QA & Testing](#intern-qa) (5)
-- ☁️ [Cloud & DevOps](#intern-cloud-devops) (3)
 - 🔐 [Security](#intern-security) (3)
+- 🧪 [QA & Testing](#intern-qa) (3)
+- ☁️ [Cloud & DevOps](#intern-cloud-devops) (2)
 - 🛠️ [IT & Support](#intern-it-support) (2)
 - 📱 [Product & Program](#intern-product) (1)
 - 🧩 [Other Tech](#intern-other) (2)
@@ -26,17 +26,18 @@ Star this repo to keep it handy. 🚧 **Closed** means the employer took the job
 ## Browse 51 new grad and entry-level jobs by category
 
 - 💻 [Software Engineering](#newgrad-software) (24)
-- 🛠️ [IT & Support](#newgrad-it-support) (11)
+- 🛠️ [IT & Support](#newgrad-it-support) (10)
 - 🤖 [Data Science, AI & Machine Learning](#newgrad-data-ai) (8)
 - ☁️ [Cloud & DevOps](#newgrad-cloud-devops) (3)
 - 🧪 [QA & Testing](#newgrad-qa) (2)
 - 📱 [Product & Program](#newgrad-product) (2)
 - 🔐 [Security](#newgrad-security) (1)
+- 🔧 [Hardware & Embedded](#newgrad-hardware) (1)
 
 ## Internships and co-ops
 
 <a name="intern-software"></a>
-### 💻 Software Engineering (41)
+### 💻 Software Engineering (40)
 
 | Company | Role | Location | Posted | Apply |
 |---|---|---|---|---|
@@ -49,7 +50,7 @@ Star this repo to keep it handy. 🚧 **Closed** means the employer took the job
 | [SSI](https://whoshiringtech.com/company/ssi/) | Software Developer Co-op | Victoria \(remote OK\) | 15d | [Apply](https://ssicorporate.bamboohr.com/careers/101) |
 | [Brave](https://whoshiringtech.com/company/brave/) | Software Engineering Intern - Waterloo University - Winter Session | Canada | 18d | [Apply](https://job-boards.greenhouse.io/brave/jobs/8360001) |
 | [DataVisor](https://whoshiringtech.com/company/datavisor/) | Software Engineer Internship - Winter 2027 | Toronto \(remote OK\) | 20d | [Apply](https://apply.workable.com/j/2FB6A93BF6) |
-| [Global Relay](https://whoshiringtech.com/company/global-relay/) | Co-op Java Developer - Winter 2027 | Halifax | 21d | [Apply](https://www.globalrelay.com/careers/jobs?gh_jid=6241594004) |
+| [Global Relay](https://whoshiringtech.com/company/global-relay/) | Co-op Java Developer - Winter 2027 | Halifax | 21d | 🚧 Closed |
 | [Botpress Technologies Inc.](https://whoshiringtech.com/company/botpress-technologies-inc/) | Software Developer Intern - WINTER 2027 | Montreal | 21d | [Apply](https://apply.workable.com/j/9B3CB646E8) |
 | [Xradar](https://whoshiringtech.com/company/xradar/) | Software Engineer Co-op | Burnaby | 27d | [Apply](https://xradar.bamboohr.com/careers/203) |
 | [Nasdaq](https://whoshiringtech.com/company/nasdaq/) | Co-op 2026 - Back End Software Developer Intern | Toronto | 28d | [Apply](https://job-boards.greenhouse.io/nasdaq/jobs/4453620009) |
@@ -133,27 +134,6 @@ Star this repo to keep it handy. 🚧 **Closed** means the employer took the job
 | [Astera Labs Early Career - North America 2027](https://whoshiringtech.com/company/astera-labs-early-career-north-america-2027/) | Firmware Engineer Intern Spring Co-Op | Vancouver | 1mo | [Apply](https://job-boards.greenhouse.io/asteraearlycareer2027/jobs/4739544005) |
 | [Astera Labs Early Career - North America 2027](https://whoshiringtech.com/company/astera-labs-early-career-north-america-2027/) | Firmware Engineer Intern \(Ottawa\) | Ottawa | 2mo | [Apply](https://job-boards.greenhouse.io/asteraearlycareer2027/jobs/4731406005) |
 
-<a name="intern-qa"></a>
-### 🧪 QA & Testing (5)
-
-| Company | Role | Location | Posted | Apply |
-|---|---|---|---|---|
-| [Global Relay](https://whoshiringtech.com/company/global-relay/) | Co-op Software Development Engineer in Test \(SDET\) - Winter 2027 | Halifax | 21d | [Apply](https://www.globalrelay.com/careers/jobs?gh_jid=6241595004) |
-| [Global Relay](https://whoshiringtech.com/company/global-relay/) | Co-op Software Development Engineer in Test \(SDET\) - Winter 2027 | Vancouver | 21d | [Apply](https://www.globalrelay.com/careers/jobs?gh_jid=6241598004) |
-| [Fours](https://whoshiringtech.com/company/fours/) | QA Engineering Intern \(Contract\) | Vancouver | 27d | 🚧 Closed |
-| [OpusClip](https://whoshiringtech.com/company/opusclip/) | Customer Experience Test Automation Intern | Burnaby | 28d | [Apply](https://jobs.ashbyhq.com/opusclip/6906926b-eb37-4b68-ad17-5383fbda7818) |
-| [Critical Environment Technologies](https://whoshiringtech.com/company/critical-environment-technologies/) | Embedded Tester Co-op | Canada | 1mo | [Apply](https://cetci.bamboohr.com/careers/91) |
-| [Lyft](https://whoshiringtech.com/company/lyft/) | Software Engineer Intern, Test Automation \(Summer 2027\) | Montreal | 2mo | [Apply](https://app.careerpuck.com/job-board/lyft/job/8767534002?gh_jid=8767534002) |
-
-<a name="intern-cloud-devops"></a>
-### ☁️ Cloud & DevOps (3)
-
-| Company | Role | Location | Posted | Apply |
-|---|---|---|---|---|
-| [Global Relay](https://whoshiringtech.com/company/global-relay/) | Co-op DevOps - Winter 2027 | Halifax | 21d | [Apply](https://www.globalrelay.com/careers/jobs?gh_jid=6241597004) |
-| [ProCogia](https://whoshiringtech.com/company/procogia/) | DevOps & Cloud Platform Intern \(December 2026 to April 2027\) | Vancouver | 1mo | [Apply](https://procogia.com/about-us/careers/?gh_jid=5448713008) |
-| [Astera Labs Early Career - North America 2027](https://whoshiringtech.com/company/astera-labs-early-career-north-america-2027/) | Platform Applications Engineer Intern/Co-op \(Tools & Validation Infrastructure\) | Vancouver | 2mo | [Apply](https://job-boards.greenhouse.io/asteraearlycareer2027/jobs/4732319005) |
-
 <a name="intern-security"></a>
 ### 🔐 Security (3)
 
@@ -162,6 +142,27 @@ Star this repo to keep it handy. 🚧 **Closed** means the employer took the job
 | [Magnet Forensics](https://whoshiringtech.com/company/magnet-forensics/) | Information Security Analyst Co-op \(Winter 2027\) | Ottawa \(remote OK\) | 14d | [Apply](https://jobs.lever.co/magnetforensics/21c3d181-2751-4255-8084-f82cdc799483) |
 | [Tenstorrent University Jobs](https://whoshiringtech.com/company/tenstorrent-university-jobs/) | Hardware Intern - AI HW & SoC \(Canada\) | Toronto | 1mo | [Apply](https://job-boards.greenhouse.io/tenstorrentuniversity/jobs/5256568007) |
 | [AlayaCare](https://whoshiringtech.com/company/alayacare/) | Intern, Security Analyst - Winter Semester 2027 | Montreal | 2mo | [Apply](https://alayacare.com/open-positions?gh_jid=8811336002) |
+
+<a name="intern-qa"></a>
+### 🧪 QA & Testing (3)
+
+| Company | Role | Location | Posted | Apply |
+|---|---|---|---|---|
+| [Global Relay](https://whoshiringtech.com/company/global-relay/) | Co-op Software Development Engineer in Test \(SDET\) - Winter 2027 | Halifax | 21d | 🚧 Closed |
+| [Global Relay](https://whoshiringtech.com/company/global-relay/) | Co-op Software Development Engineer in Test \(SDET\) - Winter 2027 | Vancouver | 21d | 🚧 Closed |
+| [Fours](https://whoshiringtech.com/company/fours/) | QA Engineering Intern \(Contract\) | Vancouver | 27d | 🚧 Closed |
+| [OpusClip](https://whoshiringtech.com/company/opusclip/) | Customer Experience Test Automation Intern | Burnaby | 28d | [Apply](https://jobs.ashbyhq.com/opusclip/6906926b-eb37-4b68-ad17-5383fbda7818) |
+| [Critical Environment Technologies](https://whoshiringtech.com/company/critical-environment-technologies/) | Embedded Tester Co-op | Canada | 1mo | [Apply](https://cetci.bamboohr.com/careers/91) |
+| [Lyft](https://whoshiringtech.com/company/lyft/) | Software Engineer Intern, Test Automation \(Summer 2027\) | Montreal | 2mo | [Apply](https://app.careerpuck.com/job-board/lyft/job/8767534002?gh_jid=8767534002) |
+
+<a name="intern-cloud-devops"></a>
+### ☁️ Cloud & DevOps (2)
+
+| Company | Role | Location | Posted | Apply |
+|---|---|---|---|---|
+| [Global Relay](https://whoshiringtech.com/company/global-relay/) | Co-op DevOps - Winter 2027 | Halifax | 21d | 🚧 Closed |
+| [ProCogia](https://whoshiringtech.com/company/procogia/) | DevOps & Cloud Platform Intern \(December 2026 to April 2027\) | Vancouver | 1mo | [Apply](https://procogia.com/about-us/careers/?gh_jid=5448713008) |
+| [Astera Labs Early Career - North America 2027](https://whoshiringtech.com/company/astera-labs-early-career-north-america-2027/) | Platform Applications Engineer Intern/Co-op \(Tools & Validation Infrastructure\) | Vancouver | 2mo | [Apply](https://job-boards.greenhouse.io/asteraearlycareer2027/jobs/4732319005) |
 
 <a name="intern-it-support"></a>
 ### 🛠️ IT & Support (2)
@@ -224,11 +225,11 @@ Star this repo to keep it handy. 🚧 **Closed** means the employer took the job
 | [Konrad](https://whoshiringtech.com/company/konrad/) | Mobile Developer \(Entry Level\) | Toronto | 3mo | 🚧 Closed |
 
 <a name="newgrad-it-support"></a>
-### 🛠️ IT & Support (11)
+### 🛠️ IT & Support (10)
 
 | Company | Role | Location | Posted | Apply |
 |---|---|---|---|---|
-| [Tecsys Inc.](https://whoshiringtech.com/company/tecsys-inc/) | Technical Support Analyst | Montreal | 4d | [Apply](https://apply.workable.com/j/57FFB75199) |
+| [Tecsys Inc.](https://whoshiringtech.com/company/tecsys-inc/) | Technical Support Analyst | Montreal | 4d | 🚧 Closed |
 | [Bertelsmann](https://whoshiringtech.com/company/bertelsmann/) | IT Onsite Support Technician | Canada | 6d | 🚧 Closed |
 | [Global Relay](https://whoshiringtech.com/company/global-relay/) | Support Specialist, Technical Support - L1 | Vancouver | 7d | [Apply](https://www.globalrelay.com/careers/jobs?gh_jid=6264641004) |
 | [Elk Valley Resources](https://whoshiringtech.com/company/elk-valley-resources/) | Technician, Desktop Support | Canada | 7d | [Apply](https://jobs.lever.co/evr/73ce4cbf-bc2d-4bf3-a2d2-d5395f4f1cc9) |
@@ -288,6 +289,13 @@ Star this repo to keep it handy. 🚧 **Closed** means the employer took the job
 | Company | Role | Location | Posted | Apply |
 |---|---|---|---|---|
 | [Questrade](https://whoshiringtech.com/company/questrade/) | Junior Cybersecurity Specialist, Incident Response \(Contract\) | Toronto | 2d | [Apply](https://job-boards.greenhouse.io/questrade/jobs/4504815009) |
+
+<a name="newgrad-hardware"></a>
+### 🔧 Hardware & Embedded (1)
+
+| Company | Role | Location | Posted | Apply |
+|---|---|---|---|---|
+| [General Dynamics Mission Systems -](https://whoshiringtech.com/company/general-dynamics-mission-systems/) | Junior – Intermediate Embedded Software Developer | Calgary | Today | [Apply](https://jobs.smartrecruiters.com/gdmsi/744000163460374) |
 
 ---
 

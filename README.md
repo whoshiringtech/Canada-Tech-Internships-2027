@@ -2,7 +2,7 @@
 
 Every open software, data, cloud, security, QA and IT internship and entry-level job in Canada that we can find, pulled straight from company career pages, plus jobs readers send in (we check each one). Updated every 6 hours.
 
-**88 internships and co-ops** and **48 new grad and entry-level jobs** as of November 25, 2026.
+**86 internships and co-ops** and **48 new grad and entry-level jobs** as of November 25, 2026.
 
 - Search all of them, plus US and remote jobs, at **[whoshiringtech.com](https://whoshiringtech.com)**
 - Get new matches by email every Monday, free: **[job alerts](https://whoshiringtech.com/alerts/)**
@@ -11,9 +11,9 @@ Every open software, data, cloud, security, QA and IT internship and entry-level
 
 Star this repo to keep it handy. 🚧 **Closed** means the employer took the job down; 📦 **Archived** means the job was posted more than 90 days ago and may be closed. Nothing is ever removed, so this list is a full record of every job that appeared.
 
-## Browse 88 internships and co-ops by category
+## Browse 86 internships and co-ops by category
 
-- 💻 [Software Engineering](#intern-software) (38)
+- 💻 [Software Engineering](#intern-software) (37)
 - 🤖 [Data Science, AI & Machine Learning](#intern-data-ai) (31)
 - 🔧 [Hardware & Embedded](#intern-hardware) (6)
 - 🔐 [Security](#intern-security) (3)
@@ -21,7 +21,7 @@ Star this repo to keep it handy. 🚧 **Closed** means the employer took the job
 - ☁️ [Cloud & DevOps](#intern-cloud-devops) (2)
 - 🛠️ [IT & Support](#intern-it-support) (2)
 - 📱 [Product & Program](#intern-product) (1)
-- 🧩 [Other Tech](#intern-other) (2)
+- 🧩 [Other Tech](#intern-other) (1)
 
 ## Browse 48 new grad and entry-level jobs by category
 
@@ -37,13 +37,14 @@ Star this repo to keep it handy. 🚧 **Closed** means the employer took the job
 ## Internships and co-ops
 
 <a name="intern-software"></a>
-### 💻 Software Engineering (38)
+### 💻 Software Engineering (37)
 
 | Company | Role | Location | Posted | Apply |
 |---|---|---|---|---|
+| [Tecsys Inc.](https://whoshiringtech.com/company/tecsys-inc/) | Intern - Developer | Montreal | Today | [Apply](https://apply.workable.com/j/D61D5FB9AB) |
 | [Brave](https://whoshiringtech.com/company/brave/) | Software Development Intern - Waterloo University - Web3 Core | Canada | 2d | [Apply](https://job-boards.greenhouse.io/brave/jobs/8412532) |
 | [AON3D Careers](https://whoshiringtech.com/company/aon3d-careers/) | Software Developer Intern | Montreal | 5d | 🚧 Closed |
-| [Workstream](https://whoshiringtech.com/company/workstream/) | Full Stack Engineer Intern | Vancouver | 6d | [Apply](https://job-boards.greenhouse.io/workstream/jobs/6265872004) |
+| [Workstream](https://whoshiringtech.com/company/workstream/) | Full Stack Engineer Intern | Vancouver | 6d | 🚧 Closed |
 | [Roblox](https://whoshiringtech.com/company/roblox/) | \[Summer 2027 Canada\] Software Engineer Intern, Engine | Vancouver | 7d | [Apply](https://careers.roblox.com/jobs/8386080?gh_jid=8386080) |
 | [Steel](https://whoshiringtech.com/company/steel/) | Software Engineer Intern \(Summer 2027\) | Toronto | 10d | [Apply](https://jobs.ashbyhq.com/steel/5fbdbebf-ddb2-4264-a941-3ab6d475208c) |
 | [Acumatica](https://whoshiringtech.com/company/acumatica/) | Intern Developer/ Stagiaire développeur | Montreal | 13d | [Apply](https://jobs.smartrecruiters.com/acumatica/744000161353959) |
@@ -51,7 +52,7 @@ Star this repo to keep it handy. 🚧 **Closed** means the employer took the job
 | [Brave](https://whoshiringtech.com/company/brave/) | Software Engineering Intern - Waterloo University - Winter Session | Canada | 19d | [Apply](https://job-boards.greenhouse.io/brave/jobs/8360001) |
 | [DataVisor](https://whoshiringtech.com/company/datavisor/) | Software Engineer Internship - Winter 2027 | Toronto \(remote OK\) | 21d | [Apply](https://apply.workable.com/j/2FB6A93BF6) |
 | [Global Relay](https://whoshiringtech.com/company/global-relay/) | Co-op Java Developer - Winter 2027 | Halifax | 22d | 🚧 Closed |
-| [Botpress Technologies Inc.](https://whoshiringtech.com/company/botpress-technologies-inc/) | Software Developer Intern - WINTER 2027 | Montreal | 22d | [Apply](https://apply.workable.com/j/9B3CB646E8) |
+| [Botpress Technologies Inc.](https://whoshiringtech.com/company/botpress-technologies-inc/) | Software Developer Intern - WINTER 2027 | Montreal | 22d | 🚧 Closed |
 | [Xradar](https://whoshiringtech.com/company/xradar/) | Software Engineer Co-op | Burnaby | 28d | 🚧 Closed |
 | [Nasdaq](https://whoshiringtech.com/company/nasdaq/) | Co-op 2026 - Back End Software Developer Intern | Toronto | 29d | [Apply](https://job-boards.greenhouse.io/nasdaq/jobs/4453620009) |
 | [TELUS Digital](https://whoshiringtech.com/company/telus-digital/) | Software Engineering Intern/Co-op \(Canada\) - Summer 2027 | Vancouver \(remote OK\) | 1mo | [Apply](https://jobs.ashbyhq.com/telus-digital/63b0654a-9849-4d74-bc3f-94b2ccceb2c2) |
@@ -181,12 +182,12 @@ Star this repo to keep it handy. 🚧 **Closed** means the employer took the job
 | [Kabam](https://whoshiringtech.com/company/kabam/) | Operations Product Manager Co-Op | Vancouver | 22d | [Apply](https://jobs.lever.co/kabam/3c37f284-4ba4-4f74-93f7-d224b910e5c9) |
 
 <a name="intern-other"></a>
-### 🧩 Other Tech (2)
+### 🧩 Other Tech (1)
 
 | Company | Role | Location | Posted | Apply |
 |---|---|---|---|---|
 | [Critical Environment Technologies](https://whoshiringtech.com/company/critical-environment-technologies/) | Computer Science Co-Op | Canada | 1mo | [Apply](https://cetci.bamboohr.com/careers/92) |
-| [Waterworth](https://whoshiringtech.com/company/waterworth/) | Computer Science Co-op | Victoria | 1mo | [Apply](https://apply.workable.com/j/D450C48C96) |
+| [Waterworth](https://whoshiringtech.com/company/waterworth/) | Computer Science Co-op | Victoria | 1mo | 🚧 Closed |
 
 ## New grad and entry level
 
